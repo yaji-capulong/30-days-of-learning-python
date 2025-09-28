@@ -89,8 +89,18 @@ else:
 
 #Check if int('9.8') is equal to 10
 
+
 #Write a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
+hours_worked = int(input('Enter hours of work today: '))
+rate_per_hour = int(input('Enter rate per hour: '))
+pay = rate_per_hour * hours_worked
+
+print('Your pay today is: ', pay)
 
 #Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
+number_of_years = int(input('Enter number of years lived: '))
+year_to_seconds = number_of_years * 31,556,952
+
+print('You have lived {1} seconds', year_to_seconds)
 
 #Write a Python script that displays the following table
