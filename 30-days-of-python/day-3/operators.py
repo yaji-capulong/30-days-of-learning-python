@@ -56,7 +56,7 @@ print('X-Intercept: ', x)
 def slope(x1,y1,x2,y2):
     m2 = y2-y1/x2-x1
     return m2
-print('Slope: 'slope(2,2,6,10))
+print('Slope: ', slope(2,2,6,10))
 
 #Compare the slopes in tasks 8 and 9.
 
