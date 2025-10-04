@@ -58,9 +58,8 @@ def slope(x1,y1,x2,y2):
     return m2
 print('Slope: ', slope(2,2,6,10))
 
-#Compare the slopes in tasks 8 and 9.
-
 #Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is going to be 0.
+
 
 #Find the length of 'python' and 'dragon' and make a falsy comparison statement.
 print(len('python')) > print(len('dragon'))
@@ -96,10 +95,10 @@ else:
     print('{1} is not equal to 2.7', floorDiv)
 
 #Check if type of '10' is equal to type of 10
-
+print('10'== 10)
 
 #Check if int('9.8') is equal to 10
-
+print (9.8 == 10)
 
 #Write a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
 hours_worked = int(input('Enter hours of work today: '))
@@ -115,7 +114,6 @@ year_to_seconds = number_of_years * 31,556,952
 print('You have lived {1} seconds', year_to_seconds)
 
 #Write a Python script that displays the following table
-
 varA = 1
 varB = 2
 varC = 3
