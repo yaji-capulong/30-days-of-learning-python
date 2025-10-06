@@ -72,6 +72,7 @@ print(company.rindex(lastletter))
 print(company[10])
 
 #Create an acronym or an abbreviation for the name 'Python For Everyone'.
+python_phrase = 'Python For Everyone'
 
 
 #Create an acronym or an abbreviation for the name 'Coding For All'.
