@@ -38,12 +38,12 @@ print(company.title())
 print(company.swapcase())
 
 #Cut(slice) out the first word of Coding For All string.
-coding = company[0:5]
+coding = company[0:6]
 print(coding)
 
 #Check if Coding For All string contains a word Coding using the method index, find or other methods.
-print(company.index('coding'))
-print(company.find('coding'))
+print(company.index('Coding'))
+print(company.find('Coding'))
 
 #Replace the word coding in the string 'Coding For All' to Python.
 print(company.replace('coding', 'python'))
@@ -69,37 +69,44 @@ lastletter = 'l'
 print(company.rindex(lastletter))
 
 #What character is at index 10 in "Coding For All" string.
-print(company[10])
+print('Character: ',company[10])
 
 #Create an acronym or an abbreviation for the name 'Python For Everyone'.
 python_phrase = 'Python For Everyone'
-
+split_phrase = python_phrase.split()
+first_word = split_phrase[0]
+second_word = split_phrase[1]
+third_word= split_phrase[2]
+print(first_word[0] + second_word[0] + third_word[0])
 
 #Create an acronym or an abbreviation for the name 'Coding For All'.
-
+coding_phrase = 'Coding For All'
+splitc_phrase = coding_phrase.split()
+firstc_word = splitc_phrase[0]
+secondc_word = splitc_phrase[1]
+thirdc_word= splitc_phrase[2]
+print(firstc_word[0] + secondc_word[0] + thirdc_word[0])
 
 #Use index to determine the position of the first occurrence of C in Coding For All.
-
+print('Index: ',coding_phrase.index('C'))
 
 #Use index to determine the position of the first occurrence of F in Coding For All.
-
+print('Index: ',coding_phrase.index('F'))
 
 #Use rfind to determine the position of the last occurrence of l in Coding For All People.
-
+print(coding_phrase.rfind('l'))
 
 #Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
-
+sentence_one = 'You cannot end a sentence with because because because is a conjunction'
+print(sentence_one.index('because'))
 
 #Use rindex to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
-
+print(sentence_one.rindex('because'))
 
 #Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 
 
 #Find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
-
-
-#Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 
 
 #Does ''Coding For All' start with a substring Coding?
