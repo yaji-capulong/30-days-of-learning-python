@@ -104,28 +104,26 @@ print(sentence_one.index('because'))
 print(sentence_one.rindex('because'))
 
 #Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
-
-
-#Find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
-
+print(sentence_one[31:54])
 
 #Does ''Coding For All' start with a substring Coding?
-
+print(coding_phrase.startswith('Coding'))
 
 #Does 'Coding For All' end with a substring coding?
-
+print(coding_phrase.endswith('Coding'))
 
 #'   Coding For All      '  , remove the left and right trailing spaces in the given string.
-
+phraseCoding = '   Coding For All      '
+print(phraseCoding.strip('   '))
 
 #Which one of the following variables return True when we use the method isidentifier():
-
-
 #30DaysOfPython
-
+challenge = '30DaysOfPython'
+print(challenge.isidentifier())
 
 #thirty_days_of_python
-
+challenge = 'thirty_days_of_python'
+print(challenge.isidentifier())
 
 #The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
 
