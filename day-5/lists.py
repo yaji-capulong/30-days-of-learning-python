@@ -55,14 +55,14 @@ does_exist = 'Amazon' in it_companies
 print(does_exist)
 
 #Sort the list using sort() method
-print('Ascending Order: ')
-print(it_companies.sort())
+it_companies.sort()
+print('Ascending Order: ', it_companies)
 
 #Reverse the list in descending order using reverse() method
-print('Descending Order: ',it_companies.sort(reverse=True))
+it_companies.sort(reverse=True)
+print('Descending Order: ', it_companies)
 
 #Slice out the first 3 companies from the list
-print(it_companies)
 print('First three companies: ',it_companies[0:3])
 
 #Slice out the last 3 companies from the list
@@ -70,28 +70,43 @@ length = len(it_companies)
 print('Last three companies: ', it_companies[(length-3):length])
 
 #Slice out the middle IT company or companies from the list
-
+print('Last three companies: ', it_companies[3:(length-3)])
 
 #Remove the first IT company from the list
-
+it_companies.pop(0)
+print(it_companies)
 
 #Remove the middle IT company or companies from the list
-
+it_companies.pop(4)
+print(it_companies)
 
 #Remove the last IT company from the list
-
+it_companies.pop()
+print(it_companies)
 
 #Remove all IT companies from the list
-
+it_companies.clear()
+print(it_companies)
 
 #Destroy the IT companies list
-
+del it_companies
+#print(it_companies)
 
 #Join the following lists:
 ''' front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
     back_end = ['Node','Express', 'MongoDB']'''
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
+
+fullstack = front_end + back_end
+print(fullstack)
 
 #After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack, then insert Python and SQL after Redux.
+full_stack = fullstack.copy()
+full_stack.insert(5, 'Python')
+full_stack.insert(6, 'SQL')
+
+print(full_stack)
 
 #Exercises: Level 2
 #The following is a list of 10 students ages:
@@ -104,6 +119,9 @@ print('Last three companies: ', it_companies[(length-3):length])
     #Find the range of the ages (max minus min)
     #Compare the value of (min - average) and (max - average), use abs() method
 
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+ages.sort()
+print('Minimum Age: ', ages[0])
 
 #Find the middle country(ies) in the countries list
 
