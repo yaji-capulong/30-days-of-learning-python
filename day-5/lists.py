@@ -115,13 +115,32 @@ print(full_stack)
     #Sort the list and find the min and max age
     #Add the min age and the max age again to the list
     #Find the median age (one middle item or two middle items divided by two)
-    #Find the average age (sum of all items divided by their number )
+    #Find the average age (sum of all items divided by their number)
     #Find the range of the ages (max minus min)
     #Compare the value of (min - average) and (max - average), use abs() method
 
 ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+#Sort the list and find the min and max age
 ages.sort()
+length = len(ages)
 print('Minimum Age: ', ages[0])
+print('Maximum Age: ', ages[length-1])
+
+#Add the min age and the max age again to the list
+ages.append(ages[0])
+ages.append(ages[length-1])
+print(ages)
+
+#Find the median age (one middle item or two middle items divided by two)
+mid1 = (length - 1)//2
+mid2 = (length)//2
+median = (ages[mid1] + ages[mid2])/2
+print(median)
+
+#Find the average age (sum of all items divided by their number)
+
+
 
 #Find the middle country(ies) in the countries list
 
