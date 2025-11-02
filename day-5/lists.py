@@ -70,7 +70,8 @@ length = len(it_companies)
 print('Last three companies: ', it_companies[(length-3):length])
 
 #Slice out the middle IT company or companies from the list
-print('Last three companies: ', it_companies[3:(length-3)])
+middlecompany = length // 2
+print('Middle IT company: ', it_companies[middlecompany])
 
 #Remove the first IT company from the list
 it_companies.pop(0)
