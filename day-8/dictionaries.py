@@ -18,7 +18,7 @@ student = {
     'gender':'Male',
     'age':'26',
     'marital status':'Single',
-    'skills':['Math','Machining','Fusion'],
+    'skills':['Math','Machining','Fusion','CNC'],
     'country':'Canada',
     'city':'Vancouver',
     'address':'3rd Avenue',
