@@ -102,7 +102,7 @@ person = {
     'last_name': 'Diaz',
     'age': 26,
     'country': 'Canada',
-    'is_marred': True,
+    'is_married': True,
     'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
     'address': {
         'street': '3rd Street',
@@ -119,7 +119,7 @@ if len(person['skills']) != 0:
 
 #Check if the person dictionary has skills key, if so check if the person has 'Python' skill 
 #and print out the result.
-if person['skills'] in person:
+if person['skills'] != 0:
     if 'Python' in person['skills']:
         print(f'{name} has the skill Python.')
 
@@ -128,6 +128,19 @@ if person['skills'] in person:
 # Node and MongoDB, Print('He is a fullstack developer'), else print('unknown title') - 
 # for more accurate results more conditions can be nested!
 
+if 'JavaScript' in person['skills'] and 'React' in person['skills']:
+    print('He is a front-end developer')
+elif 'Node' in person['skills'] and 'Python' in person['skills'] and 'MongoDB' in person['skills']:
+    print('He is a backend developer')
+elif 'React' in person['skills'] and 'Python' in person['skills'] and 'MongoDB' in person['skills']:
+    print('He is a full stack developer')
+else:
+    print('Unknown title')
 
 # If the person is married and if he lives in Finland, print the information in the following format
 # "Asabeneh Yetayeh lives in Finland. He is married."
+
+first_name = person['first_name']
+country = person['country']
+if person['is_married'] == True:
+    print(f'{first_name} lives in {country}. He is married.')
