@@ -1,5 +1,9 @@
 #Day 9: 30 Days of Python Programming
 
+import countries
+import countries_data
+from operator import itemgetter
+
 #Iterate 0 to 10 using for loop, do the same using while loop.
 
 #for number in range(11):
@@ -121,8 +125,39 @@ for i in range(50):
 print(totalOdd)
 
 #Go to the data folder and use the countries.py file. Loop through the countries and extract all the countries containing the word land.
+countriesLand = []
+
+for n in countries.countries:
+    if "land" in n:
+        countriesLand.append(n)
+
+print(countriesLand)
+
 #This is a fruit list, ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop.
+fruitLst = ['banana', 'orange', 'mango', 'lemon']
+newList = []
+
+for n in range(len(fruitLst) - 1, -1, -1):
+    newList.append(fruitLst[n])
+
+print(newList)
+
 #Go to the data folder and use the countries_data.py file.
+
 #What are the total number of languages in the data
+lang_count = {}
+for country in countries_data.country_data:
+    for lang in country['languages']:
+        if lang in lang_count:
+            lang_count[lang] +=1
+        else:
+            lang_count[lang] = 1
+
 #Find the ten most spoken languages from the data
+mostSpoken = []
+for lang, count in sorted(lang_count.items(), key=itemgetter(1), reverse=True):
+    if len(mostSpoken) < 10:
+        mostSpoken.append(lang)
+print(mostSpoken)
+
 #Find the 10 most populated countries in the world
